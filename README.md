@@ -1,5 +1,12 @@
 # Markov Chain Stock Price Modeling
+A quantitative finance project applying Markov chains to model stock price dynamics using real-world data.
 
+## Key Features
+- Implemented a discrete-time Markov chain model for financial time series  
+- Constructed transition matrices from real stock data (AAPL)  
+- Computed the stationary distribution using power iteration  
+- Visualized transition dynamics with heatmaps and statistical plots
+- 
 ## Overview
 This project models stock price dynamics using a discrete-time Markov chain. 
 Daily returns are classified into 5 states to analyze transition behavior and long-term trends.
@@ -19,15 +26,17 @@ Daily returns are classified into 5 states to analyze transition behavior and lo
 ## Methodology
 - Convert prices → returns → states
 - Build transition matrix
-- Compute stationary distribution (power iteration)
+- Compute the stationary distribution (power iteration)
 
 ## Results
 
 ### Transition Matrix
 ![Transition](images/transition_heatmap.png)
+The transition matrix shows high probability mass concentrated near diagonal entries, indicating that daily stock movements tend to remain within nearby states.
 
 ### Stationary Distribution
 ![Stationary](images/stationary_distribution.png)
+The stationary distribution highlights that the "stable" state dominates in the long run, suggesting that large price fluctuations are relatively rare.
 
 ## Key Insights
 - Most probability mass is near stable states
