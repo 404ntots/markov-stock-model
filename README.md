@@ -28,6 +28,12 @@ Daily returns are classified into 5 states to analyze transition behavior and lo
 - Build transition matrix
 - Compute the stationary distribution (power iteration)
 
+## Mathematical Formulation
+- Let the transition matrix be P where:
+- P(i,j) = Probability of transitioning from state i to state j
+- The stationary distribution π satisfies:
+- πP = π
+
 ## Results
 
 ### Transition Matrix
@@ -44,6 +50,11 @@ The stationary distribution highlights that the "stable" state dominates in the 
 - Most probability mass is near stable states
 - Extreme movements are rare
 - Indicates moderate volatility
+
+## Limitations
+- Assumes Markov property (no long-term memory)
+- Ignores external market factors
+- Not intended for prediction, only analysis
 
 ## Tech Stack
 Python, NumPy, pandas, Matplotlib
