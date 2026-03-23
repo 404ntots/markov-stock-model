@@ -32,10 +32,12 @@ Daily returns are classified into 5 states to analyze transition behavior and lo
 
 ### Transition Matrix
 ![Transition](images/transition_heatmap.png)
+
 The transition matrix shows high probability mass concentrated near diagonal entries, indicating that daily stock movements tend to remain within nearby states.
 
 ### Stationary Distribution
 ![Stationary](images/stationary_distribution.png)
+
 The stationary distribution highlights that the "stable" state dominates in the long run, suggesting that large price fluctuations are relatively rare.
 
 ## Key Insights
